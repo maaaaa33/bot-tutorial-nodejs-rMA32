@@ -17,12 +17,14 @@ function respond() {
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage(cool());
+    postMessage(request.user_id);
     this.res.end();
   } 
   else if(request.text && botRegexTrs.test(request.text)) {
     this.res.writeHead(200);
     postMessage("There should be things after this:")
     postMessage(request.user_id);
+    postMessage("/cool guy");
     this.res.end();
   }
   else if(request.text && botRegexDL.test(request.text)) {
