@@ -21,7 +21,8 @@ function respond() {
   } 
   else if(request.text && botRegexTrs.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Hey");
+    postMessage("There should be things after this:")
+    postMessage(request.user_id);
     this.res.end();
   }
   else if(request.text && botRegexDL.test(request.text)) {
@@ -110,7 +111,6 @@ function respond() {
   else {
     console.log("don't care");
     this.res.writeHead(200);
-    postMessage(request.user_id);
     this.res.end();
   }
 }
