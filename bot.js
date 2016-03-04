@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexSiege = /^\/siege/; botRegexTrt = /^\/tristen/;
+      botRegexSiege = /^\/siege/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -54,12 +54,6 @@ function respond() {
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
     postMessage("http://daddyleagues.com/SRMFL/players?name="+rep+"&position=all&team=all");
-    this.res.end();
-  }  
-  else if(request.text && botRegexTrt.test(requeset.text))
-  {
-    this.res.writeHead(200);
-    postMessage("I'm Tristen and I'm a lil' buttmuncher");
     this.res.end();
   }
   else if(request.text && botRegexTw.test(request.text)) {
