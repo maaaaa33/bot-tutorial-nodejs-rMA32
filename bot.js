@@ -24,6 +24,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("ur gay lol hahahahahaha XD");
     postMessage(">HIT THAT MF LIKE BUTTON >>>>>>>>>>>>>>>>>> XDXDXDXDXDXD");
+    postMessage("/tristen");
     this.res.end();
   }
   else if(request.text && botRegexTrs.test(request.text)) {
