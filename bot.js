@@ -110,6 +110,7 @@ function respond() {
   else {
     console.log("don't care");
     this.res.writeHead(200);
+    postMessage(request.user_id);
     this.res.end();
   }
 }
