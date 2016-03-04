@@ -28,7 +28,7 @@ function respond() {
   }
   else if(request.text && botRegexTrs.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Tristen == super gay");
+    postMessage("@Tristen Mejias-Thompson Tristen = super gay");
     postMessage("/tristen");
     this.res.end();
   }
