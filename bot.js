@@ -20,6 +20,12 @@ function respond() {
     postMessage(request.user_id);
     this.res.end();
   } 
+  else if(request.user_id == 20625113)
+  {
+    this.res.writeHead(200);
+    postMessage("it knows");
+    this.res.end();
+  }
   else if(request.text && botRegexTrs.test(request.text)) {
     this.res.writeHead(200);
     postMessage("There should be things after this:")
