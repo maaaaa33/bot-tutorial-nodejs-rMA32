@@ -20,7 +20,7 @@ function respond() {
     postMessage(request.user_id);
     this.res.end();
   } 
-  else if(request.user_id == 20625113)
+  else if(request.name == "Ryan Sharkey")
   {
     this.res.writeHead(200);
     postMessage("it knows");
