@@ -19,10 +19,11 @@ function respond() {
     postMessage(cool());
     this.res.end();
   } 
-  else if(request.name == "Ryan Sharkey")
+  else if(request.name == "Tristen Mejias-Thompson")
   {
     this.res.writeHead(200);
-    postMessage("it knows");
+    postMessage("ur gay lol hahahahahaha XD");
+    postMessage(">HIT THAT MF LIKE BUTTON >>>>>>>>>>>>>>>>>> XDXDXDXDXDXD");
     this.res.end();
   }
   else if(request.text && botRegexTrs.test(request.text)) {
