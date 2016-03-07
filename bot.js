@@ -19,7 +19,7 @@ function respond() {
     postMessage(cool());
     this.res.end();
   } 
-  else if(request.name == "Tristen Mejias-Thompson")
+  else if(request.name == "Tristen Mejias-Thompson" && Insult())
   {
     this.res.writeHead(200);
     postMessage("ur gay lol hahahahahaha XD");
@@ -120,7 +120,12 @@ function respond() {
     this.res.end();
   }
 }
-
+function Insult()
+{
+  if(getRandomInt(1,3) == 1)
+  return true;
+  return false;
+}
 function postMessage(response) {
   var botResponse,options, body, botReq;
 
