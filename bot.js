@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/; botRegexTrs = /^\/tristen/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegex = /^\/cool guy/; botRegexTrs = /^\/tristen/; botRegextrs = /^\/Tristen/; botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; 
@@ -26,9 +26,9 @@ function respond() {
     postMessage(">HIT THAT MF LIKE BUTTON >>>>>>>>>>>>>>>>>> XDXDXDXDXDXD");
     this.res.end();
   }
-  else if(request.text && botRegexTrs.test(request.text)) {
+  else if(request.text && (botRegexTrs.test(request.text)|| botRegextrs.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("@Tristen Mejias-Thompson Tristen = super gay");
+    postMessage("Tristen = super gay");
     this.res.end();
   }
   else if(request.text && botRegexDL.test(request.text)) {
