@@ -26,7 +26,7 @@ function respond() {
     postMessage(">HIT THAT MF LIKE BUTTON >>>>>>>>>>>>>>>>>> XDXDXDXDXDXD");
     this.res.end();
   }
-  else if(request.text && (botRegexTrs.test(request.text)|| botRegextrs.test(request.text)) {
+  else if(request.text && (botRegexTrs.test(request.text)|| botRegexTrs.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Tristen = super gay");
     this.res.end();
